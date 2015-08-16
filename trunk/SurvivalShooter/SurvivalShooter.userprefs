@@ -1,39 +1,9 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Managers\EnemyManager.cs">
+  <MonoDevelop.Ide.Workspace />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\PlayerMovement.cs">
     <Files>
-      <File FileName="Assets\Scripts\Enemy\EnemyMovement.cs" Line="8" Column="11" />
-      <File FileName="Assets\Scripts\Managers\ProgressionManager.cs" Line="35" Column="26" />
-      <File FileName="Assets\Scripts\Managers\EnemyManager.cs" Line="16" Column="2" />
-      <File FileName="Assets\Scripts\Managers\SweeteorManager.cs" Line="19" Column="74" />
+      <File FileName="Assets\Scripts\Player\PlayerMovement.cs" Line="58" Column="3" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="Assembly-CSharp" expanded="True">
-            <Node name="Scripts" expanded="True">
-              <Node name="Enemy" expanded="True" />
-              <Node name="Managers" expanded="True">
-                <Node name="EnemyManager.cs" selected="True" />
-              </Node>
-              <Node name="Player" expanded="True" />
-            </Node>
-          </Node>
-          <Node name="Assembly-UnityScript" expanded="True" />
-          <Node name="Assembly-UnityScript-Editor" expanded="True">
-            <Node name="_CompletedAssets" expanded="True">
-              <Node name="SampleAssets" expanded="True">
-                <Node name="Effects" expanded="True">
-                  <Node name="ImageEffects" expanded="True">
-                    <Node name="Editor" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
