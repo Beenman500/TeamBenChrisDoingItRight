@@ -7,6 +7,7 @@ public class SweeteorManager : MonoBehaviour {
 	public GameObject enemy;
 	public float spawnTime = 5f;
 	public float startHeight = 30f;
+	public static int initialSweeteorLevel = 5;
 
 	void Start ()
 	{
@@ -16,7 +17,7 @@ public class SweeteorManager : MonoBehaviour {
 	
 	void Spawn ()
 	{
-		if(playerHealth.currentHealth <= 0f || ProgressionManager.isProgressing)
+		if(playerHealth.currentHealth <= 0f || ProgressionManager.isProgressing || ProgressionManager.currentLevel < initialSweeteorLevel)
 		{
 			return;
 		}

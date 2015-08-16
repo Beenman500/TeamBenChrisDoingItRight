@@ -53,7 +53,10 @@ public class SweeteorInteraction : MonoBehaviour {
 		}
 	}
 	void Update(){
-		if (playerHit == true && ProgressionManager.isProgressing == false) {
+		if (ProgressionManager.isProgressing) {
+			Destroy (gameObject, 0f);
+		}
+		if (playerHit == true) {
 			//Debug.Log("Player got Hit");
 			if(playerHealth.currentHealth > 0)
 			{
@@ -83,7 +86,7 @@ public class SweeteorInteraction : MonoBehaviour {
 		currentPosition = transform.position;
 		forceVector = player.transform.position - currentPosition;
 		forceVector.Normalize ();
-		forceVector = forceVector * force; 
+		forceVector = forceVector * force * (ProgressionManager.currentLevel - SweeteorManager.initialSweeteorLevel + 1); 
 	}
 
 	void StartSinking (){

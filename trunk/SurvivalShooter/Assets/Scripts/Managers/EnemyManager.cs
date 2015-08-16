@@ -8,6 +8,8 @@ public class EnemyManager : MonoBehaviour
     public Transform[] spawnPoints;
 
 
+
+
     void Start ()
     {
         InvokeRepeating ("Spawn", spawnTime, spawnTime);
@@ -16,7 +18,7 @@ public class EnemyManager : MonoBehaviour
 
     void Spawn ()
     {
-		if(playerHealth.currentHealth <= 0f || ProgressionManager.isProgressing)
+		if(playerHealth.currentHealth <= 0f || ProgressionManager.isProgressing || (enemy.name == "ZomBear" && ProgressionManager.currentLevel < 2)|| (enemy.name == "Hellephant" && ProgressionManager.currentLevel < 3))
         {
             return;
         }

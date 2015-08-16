@@ -9,7 +9,7 @@ public class ProgressionManager : MonoBehaviour {
 	public Text progressText;
 	public static bool isProgressing = false;
 
-	public int currentLevel;
+	public static int currentLevel;
 	int nextLevel;
 	int nextLevelScore;
 	int lastScore;
@@ -34,6 +34,15 @@ public class ProgressionManager : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.Return) && isProgressing) {
 			isProgressing = false;
 			animHud.SetBool("Progressing", isProgressing);
+			if (currentLevel == 2){
+				progressScore = 200;
+			}
+			else if (currentLevel == 4){
+				progressScore = 300;
+			}
+			else if (currentLevel == 6){
+				progressScore = 500;
+			}
 		}
 		levelText.text = "Level: " + currentLevel;
 		lastScore = ScoreManager.score;
