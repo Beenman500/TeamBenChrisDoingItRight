@@ -2,8 +2,8 @@
 ## Temp Files ##
 #################
 
-dir_to_ignore/trunk\SurvivalShooter\Temp
-dir_to_ignore/trunk\SurvivalShooter\Library
+dir_to_ignore/trunk\SurvivalShooter\Temp\*
+dir_to_ignore/trunk\SurvivalShooter\Library\*
 
 
 #################
