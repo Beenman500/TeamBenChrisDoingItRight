@@ -32,13 +32,15 @@ public class PlayerMovement : MonoBehaviour
 		float space = Input.GetAxis ("Jump");
 		
 		// Move the player around the scene.
-		Move (h, v, space);
+		if (ProgressionManager.isProgressing == false) {
+			Move (h, v, space);
 		
-		// Turn the player to face the mouse cursor.
-		Turning ();
+			// Turn the player to face the mouse cursor.
+			Turning ();
 		
-		// Animate the player.
-		Animating (h, v);
+			// Animate the player.
+			Animating (h, v);
+		}
 	}
 	
 	
