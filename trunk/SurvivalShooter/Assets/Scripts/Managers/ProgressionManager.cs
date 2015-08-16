@@ -9,7 +9,7 @@ public class ProgressionManager : MonoBehaviour {
 	public Text progressText;
 	public static bool isProgressing = false;
 
-	int currentLevel;
+	public int currentLevel;
 	int nextLevel;
 	int nextLevelScore;
 	int lastScore;
