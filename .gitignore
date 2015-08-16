@@ -17,19 +17,9 @@
 *.userprefs
 *.pidb
 *.booproj
-<<<<<<< HEAD
 
 # Unity3D generated meta files
 *.pidb.meta
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
-
-=======
-
-# Unity3D generated meta files
-*.pidb.meta
-
-# Unity3D Generated File On Crash Reports
-sysinfo.txt
->>>>>>> 0467735c5799e9cfa6192879861fe4c082a49cdc
